@@ -1,2 +1,4 @@
-# whatsapp_redirector
-A WhatsApp group redirector with custom link.
+# WhatsApp Redirector
+This is a simple whatspp group redirect system developed using Laravel 8. Functionaly of the system is admin and users can create campaign here with name, icon and slug. After that user can create unlimited groups for that campaign with a whatsapp link and how many number of times user will be redirect to that whatsapp link.
+
+Suppose Campaign A has 3 groups. Each group has 100 redirect limit. So when a group's redirect limit is fulfilled user will redirect to next group's whatsapp link. That will occur using a custom url of the campaign. Suppose user entered campaign1 as the slug for Campaign A. So custom url will be https://example.com/c/campaign1. When user hit this link system will check which group redirect limit is still available according to group's creation date then if system found any left place for redirection BINGO!!! user redirect to that group's whatsapp url.
